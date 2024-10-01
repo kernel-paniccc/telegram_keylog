@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/home/user/venv/bin/python /home/ivan/Bot/run.py
+ExecStart=/home/user/venv/bin/python /home/user/Bot/run.py
 WorkingDirectory=/home/ivan/BashBot
 Restart=always
 
