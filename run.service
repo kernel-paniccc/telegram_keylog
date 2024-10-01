@@ -1,0 +1,12 @@
+[Unit]
+Description=tgBashShell
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/user/venv/bin/python /home/ivan/Bot/run.py
+WorkingDirectory=/home/ivan/BashBot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
