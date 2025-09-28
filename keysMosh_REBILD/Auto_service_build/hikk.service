@@ -1,0 +1,15 @@
+[Unit]
+Description=tgBashKeys
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/ivan/keysMosh/run.py
+WorkingDirectory=/home/ivan/keysMosh
+Environment=DISPLAY=:0
+DeviceAllow=/dev/video0
+Environment="TOKEN=7737495028:AAFPVILOhHfvEXgWnkOTrjTjmdM_CyH4cyM"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
